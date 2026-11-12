@@ -6,6 +6,7 @@ __pycache__/
 # Local Databases & Reports
 *.db
 *.pdf
+!Python_Mentor_Project_Report.pdf
 
 # Streamlit secrets (NEVER PUSH API KEYS)
 .streamlit/secrets.toml
