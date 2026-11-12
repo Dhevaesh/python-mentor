@@ -191,10 +191,10 @@ for i in range(x):
 print(n)'''
 
 
-x=6
+'''x=6
 for i in range(x,0,-1):
     print(" " * (x-i),end=' ')
     for j in range(1,i+1):
         print(j,end=' ')
-    print()
+    print()'''
 
