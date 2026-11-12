@@ -1,0 +1,14 @@
+[
+  {
+    "func": "factorial",
+    "type": "TypeError (None input)",
+    "reason": "Crashed when passed an empty NoneType input",
+    "raw": "FAILED on input 4 (None): TypeError -> unsupported operand type(s) for +: 'NoneType' and 'int'\nTrace"
+  },
+  {
+    "func": "calculate_percentage",
+    "type": "ZeroDivisionError",
+    "reason": "Division by zero on zero boundary",
+    "raw": "FAILED on input 1 ([0, 0]): ZeroDivisionError -> division by zero\nTraceback (most recent call last):"
+  }
+]

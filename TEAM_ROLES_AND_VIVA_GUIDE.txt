@@ -1,0 +1,86 @@
+================================================================================
+Python Mentor: Python Code Tester & Practice Tool
+5-Member Team Role Guide & Viva Explanation
+================================================================================
+
+PROJECT OVERVIEW:
+Python Mentor is a Python project that tests functions against common edge cases
+(like None, 0, negative numbers, and empty lists), automatically fixes crashes
+by adding input checks, and provides practice quizzes and timed tests.
+
+Structure:
+- 5 Standalone Python Modules (one for each team member)
+- 1 Web Interface (app.py) that connects all 5 modules together
+
+--------------------------------------------------------------------------------
+MEMBER 1: Edge-Case Tester (Command 1: "Test Code")
+--------------------------------------------------------------------------------
+• File: module_1_test_code.py
+• Test Runner: Double-click `test_module_1.bat`
+• What to say in Viva:
+  1. "I created Module 1, which inspects a function's parameters using Python's built-in ast module."
+  2. "It generates test inputs with edge cases: 0, -1, None, large numbers, and empty lists."
+  3. "It runs the function in an isolated subprocess with a 4-second timeout to catch crashes like ZeroDivisionError, TypeError, or infinite loops."
+
+--------------------------------------------------------------------------------
+MEMBER 2: Code Fixer (Command 2: "Fix Code")
+--------------------------------------------------------------------------------
+• File: module_2_fix_code.py
+• Test Runner: Double-click `test_module_2.bat`
+• What to say in Viva:
+  1. "I created Module 2, which automatically fixes code after a crash."
+  2. "It checks why the function failed (like None input or division by zero) and uses AST to insert safety checks like 'if n is None: return 0' at the start."
+  3. "It also wraps the function body in a try-except block and updates the local file on disk."
+
+--------------------------------------------------------------------------------
+MEMBER 3: Logic Quiz Generator (Command 3: "Logic Quiz")
+--------------------------------------------------------------------------------
+• File: module_3_logic_quiz.py
+• Test Runner: Double-click `test_module_3.bat`
+• What to say in Viva:
+  1. "I created Module 3, which generates multiple-choice questions to test understanding of the code."
+  2. "It checks loop limits (like < vs <=), recursion, and boundary conditions."
+  3. "Options A, B, and C are shuffled randomly, and it grades answers with explanations."
+
+--------------------------------------------------------------------------------
+MEMBER 4: Timed Test Engine (Command 4: "Timed Test")
+--------------------------------------------------------------------------------
+• File: module_4_timed_test.py
+• Test Runner: Double-click `test_module_4.bat`
+• What to say in Viva:
+  1. "I created Module 4, which runs a timed practice test."
+  2. "It gathers questions from uploaded Python files and errors from the Error Notebook."
+  3. "It lets the user set a countdown timer (5 to 30 seconds per question), calculates the score without negative marking, and allows retaking missed questions."
+
+--------------------------------------------------------------------------------
+MEMBER 5: Error Notebook (Command 5: "Error Notebook")
+--------------------------------------------------------------------------------
+• File: module_5_error_notebook.py
+• Test Runner: Double-click `test_module_5.bat`
+• What to say in Viva:
+  1. "I created Module 5, which is an Error Notebook that logs runtime crashes."
+  2. "It records the function name, exception type, and cause into persistent JSON storage."
+  3. "Users can view recorded errors, delete individual entries, or clear all."
+
+--------------------------------------------------------------------------------
+PROJECT LEAD: Web Interface & Integration
+--------------------------------------------------------------------------------
+• File: app.py, run.bat
+• Test Runner: Double-click `run.bat`
+• What to say in Viva:
+  1. "I built the Streamlit web dashboard that connects all 5 modules into a clean user interface."
+  2. "I handled the state management, file uploading, timer widgets, and persistent error storage."
+  3. "All modules run locally using pure Python standard library with zero external API dependencies."
+
+================================================================================
+HOW TO DEMO:
+1. Double-click `run.bat` to open the app in your browser (http://localhost:8501).
+2. Click any of the 5 top buttons:
+   - "Test Code" -> Tests the current code with edge cases
+   - "Fix Code"  -> Automatically adds input checks and fixes crashes
+   - "Logic Quiz" -> Runs a 3-question conceptual quiz
+   - "Timed Test" -> Launches a timed practice test with timer
+   - "Error Notebook" -> Displays past crashes with delete buttons
+3. If an examiner asks any member to show their individual work:
+   They can open their `module_X_....py` file or double-click `test_module_X.bat` to run it directly in the terminal!
+================================================================================

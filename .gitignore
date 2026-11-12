@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local Databases & Reports
+*.db
+*.pdf
+
+# Streamlit secrets (NEVER PUSH API KEYS)
+.streamlit/secrets.toml
+.env
+
+# Backups
+*_healed.py
